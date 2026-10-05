@@ -12,7 +12,7 @@ You can also paste the code into Google Colab (colab.research.google.com) and ru
 It prints the average test error and tomorrow's prediction, and saves `result.png` (actual vs predicted).
 
 ## How it works
-1. Create 3 years of daily temperatures (a yearly wave plus noise).
+1. Download 3 years of real daily temperatures for Bengaluru from the free Open-Meteo API.
 2. Scale values to 0-1.
 3. Turn the data into samples: last 7 days -> next day.
 4. Train on the first 80% of days, test on the last 20%.
@@ -31,3 +31,4 @@ Real daily temperature data for Bengaluru from the free Open-Meteo API.
 ## Results
 ![Prediction](result.png)
 ![7-day forecast](forecast.png)
+It also forecasts the next 7 days and saves forecast.png.
